@@ -12,6 +12,7 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* Output = l1;
         int balance = 0;
         ListNode WWE = ListNode(1);
+        ListNode* WWW = &WWE;
         while(l1->next != nullptr && l2->next != nullptr) {
             if (l1->val + l2->val + balance >= 10) {
                 l1->val = (l1->val + l2->val + balance) % 10;
